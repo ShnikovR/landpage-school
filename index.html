@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Horta educativa da EEEI Prof. Anymoré do Brasil. Explore as plantações da escola e aprenda a cuidar de cada cultivo."
+    />
+    <title>Horta Educativa | EEEI Prof. Anymoré do Brasil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-leaves" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">🌱</span>
+          <span class="brand-text">
+            <strong>Horta da Escola</strong>
+            <small>E.E. Prof. Anymoré do Brasil</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          Menu
+        </button>
+        <nav id="menu-principal" class="site-nav" aria-label="Seções da página">
+          <a href="#inicio">Início</a>
+          <a href="#nossa-horta">Nossa Horta</a>
+          <a href="#plantacoes">Plantações</a>
+          <a href="#cuidados">Cuidados</a>
+          <a href="#localizacao">Planta baixa</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Projeto educativo da horta escolar</p>
+          <h1>E.E. Prof. Anymoré do Brasil</h1>
+          <p class="lead">
+            Cada semente que plantamos é uma aula viva. Explore a horta da escola,
+            conheça as plantações e aprenda, com calma e curiosidade, como cuidar
+            da terra, da água e de cada planta.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#plantacoes">Explorar as plantações</a>
+            <a class="btn btn-ghost" href="#nossa-horta">Conhecer o projeto</a>
+          </div>
+        </div>
+        <!-- Foto da escola: substitua imagens/escola/fachada.jpg se enviarem outra. -->
+        <figure class="hero-photo">
+          <img
+            src="imagens/escola/fachada.jpg"
+            alt="Fachada da EEEI Prof. Aymoré do Brasil, Escola de Ensino Integral"
+          />
+          <figcaption>E.E. Prof. Aymoré do Brasil — Escola de Ensino Integral</figcaption>
+        </figure>
+      </section>
+
+      <section id="nossa-horta" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Um laboratório a céu aberto</p>
+          <h2>Nossa Horta</h2>
+        </div>
+        <div class="intro-grid">
+          <article class="intro-text">
+            <p>
+              A horta da <strong>E.E. Prof. Anymoré do Brasil</strong> faz parte
+              das atividades dos alunos. Nela, a turma acompanha o ciclo da vida:
+              preparar o solo, semear, regar, observar, cuidar e colher.
+            </p>
+            <p>
+              Mais do que produzir alimentos, a horta ensina paciência,
+              responsabilidade e respeito ao meio ambiente. Cada canteiro guarda
+              uma história de aprendizado — e esta página é um convite para
+              explorar esses cultivos com olhos de cientista e coração de jardineiro.
+            </p>
+          </article>
+          <aside class="intro-note">
+            <p>
+              “Cuidar de uma planta é praticar atenção: olhar todo dia, perceber
+              o que ela precisa e celebrar quando ela cresce.”
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- TÓPICO A — plantações existentes na escola (nomes conforme a referência) -->
+      <section id="plantacoes" class="section topic-a">
+        <div class="section-heading">
+          <span class="topic-seal" aria-hidden="true">Tópico A</span>
+          <p class="eyebrow">Toque em um cultivo para aprender</p>
+          <h2>Plantações da horta</h2>
+          <p class="section-desc">
+            Estes são os cultivos da horta da escola. Escolha uma plantação para
+            ver a imagem, o jeito de plantar e os cuidados de cada uma.
+          </p>
+        </div>
+
+        <div id="lista-plantacoes" class="plant-grid" role="list"></div>
+
+        <article
+          id="detalhe-plantacao"
+          class="plant-detail"
+          hidden
+          aria-live="polite"
+        ></article>
+      </section>
+
+      <section id="cuidados" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Guia geral da horta</p>
+          <h2>Aprenda a cuidar</h2>
+          <p class="section-desc">
+            Antes de olhar cada planta de perto, vale lembrar os cuidados que
+            quase toda horta escolar precisa. Depois, compare com a ficha de
+            cada cultivo.
+          </p>
+        </div>
+        <div class="care-grid">
+          <article class="care-card">
+            <span class="care-icon" aria-hidden="true">🌱</span>
+            <h3>Plantio</h3>
+            <p>
+              A terra deve estar soltinha e limpa de mato. Sementes pequenas
+              ficam perto da superfície; mudas precisam de um buraquinho para
+              as raízes se acomodarem.
+            </p>
+          </article>
+          <article class="care-card">
+            <span class="care-icon" aria-hidden="true">💧</span>
+            <h3>Água</h3>
+            <p>
+              Regue de manhã cedo ou no fim da tarde. O solo deve ficar úmido,
+              nunca encharcado. Molhe a terra, não só as folhas.
+            </p>
+          </article>
+          <article class="care-card">
+            <span class="care-icon" aria-hidden="true">☀️</span>
+            <h3>Luz solar</h3>
+            <p>
+              A maioria das hortaliças gosta de sol. Observe se o canteiro
+              recebe luz boa parte do dia e se alguma planta está sombreando
+              a outra.
+            </p>
+          </article>
+          <article class="care-card">
+            <span class="care-icon" aria-hidden="true">🌍</span>
+            <h3>Solo</h3>
+            <p>
+              Um bom solo é fofo, rico em matéria orgânica e drena bem. Folhas
+              secas e restos de plantas ajudam a alimentar a terra.
+            </p>
+          </article>
+          <article class="care-card">
+            <span class="care-icon" aria-hidden="true">🌿</span>
+            <h3>Cuidados</h3>
+            <p>
+              Tire o mato com cuidado, sem ferir as raízes. Observe folhas
+              amarelas, furos ou plantas tombadas — a horta “conversa” com
+              quem presta atenção.
+            </p>
+          </article>
+          <article class="care-card">
+            <span class="care-icon" aria-hidden="true">🧹</span>
+            <h3>Manutenção</h3>
+            <p>
+              Visite o canteiro com frequência. Afofe a terra, retire folhas
+              doentes e mantenha os caminhos limpos para as plantas respirarem.
+            </p>
+          </article>
+          <article class="care-card care-card-wide">
+            <span class="care-icon" aria-hidden="true">🍅</span>
+            <h3>Colheita</h3>
+            <p>
+              Colha no ponto certo: folhas tenras, frutos coloridos e raízes
+              do tamanho esperado. Usar tesoura ou as mãos com jeito protege
+              a planta para continuar produzindo.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!--
+        Tópico B — Planta baixa / localização da horta.
+        Para trocar a imagem no futuro: substitua o arquivo
+        imagens/localizacao/planta-baixa-horta.png
+        (ou altere LOCALIZACAO_IMAGEM em script.js).
+      -->
+      <section id="localizacao" class="section topic-b">
+        <div class="section-heading">
+          <span class="topic-seal topic-seal-b" aria-hidden="true">Tópico B</span>
+          <p class="eyebrow">Organização física da horta</p>
+          <h2>Planta baixa da horta escolar</h2>
+          <p class="section-desc">
+            Esta é a planta baixa da horta: canteiros, áreas de cultivo,
+            árvores frutíferas, composteira e os demais elementos do projeto.
+            Toque na imagem para ampliar e ver cada detalhe.
+          </p>
+        </div>
+        <div class="map-shell">
+          <div id="mapa-localizacao" class="map-placeholder">
+            <p class="map-label">Tópico B → Planta baixa da horta</p>
+            <p class="map-status">Aguardando a imagem da planta baixa.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="planta-lightbox" class="plan-lightbox" aria-labelledby="planta-lightbox-title">
+      <div class="plan-lightbox-bar">
+        <h3 id="planta-lightbox-title">Planta baixa da horta escolar</h3>
+        <button class="plan-lightbox-close" type="button" data-close-planta>
+          Fechar
+        </button>
+      </div>
+      <div class="plan-lightbox-stage">
+        <img
+          id="planta-lightbox-img"
+          alt="Planta baixa da horta escolar em tamanho ampliado"
+        />
+      </div>
+      <p class="plan-lightbox-hint">
+        Role ou arraste para percorrer a planta. No celular, você também pode
+        aproximar com dois dedos. Esc fecha esta janela.
+      </p>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p><strong>EEEI Prof. Anymoré do Brasil</strong></p>
+        <p>Projeto educativo da horta escolar — aprender cultivando.</p>
+        <p class="footer-note">
+          Página feita para os alunos explorarem os canteiros da própria escola.
+      </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
